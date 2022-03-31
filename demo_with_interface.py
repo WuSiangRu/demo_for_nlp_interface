@@ -221,12 +221,6 @@ def user_text(user_turn_context, history=[]):
     # print("tmp_pred", tmp_pred)
     # print("aaa", (tmp_pred, lex_response))
     # print(type((tmp_pred, lex_response)))
-    html = "<div class='chatbot'>"
-    for user_msg, resp_msg in history:
-        html += f"<div class='user_msg'>{user_msg}</div>"
-        html += f"<div class='resp_msg'>{resp_msg}</div>"
-    html += "</div>"
-    print(html)
     return history, history, beliefs, action_text, response_text
     # return html, history
     # return lex_response
@@ -255,10 +249,9 @@ if __name__ == "__main__":
              .text-white {font-size:18px}
              .space-y-4>:not([hidden])~:not([hidden]) {font-size:18px}
     """
-
     title = "中文多領域任務導向對話系統"
     description = """<center>
-    <img src="/images/lab_logo.png" width=350px>
+    <img src = "https://raw.githubusercontent.com/WuSiangRu/demo_for_nlp_interface/main/images/lab_logo.png" width=50%>
     結合SimpleTOD和R-Drop演算法架構實現
     </center>"""
     gr.Interface(fn=user_text,
