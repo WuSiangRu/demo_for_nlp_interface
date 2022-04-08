@@ -21,4 +21,9 @@ pip install gradio
 1. demo_with_interface
 2. 模型權重則要自行訓練
 
+#### 其他補充
+1. demo.py為英文版的demo(無介面)
+2. demo_zhtw_mod.py為測試修改中文用(無介面)
+3. 模型權重訓練(待補...)
+
 
